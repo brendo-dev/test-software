@@ -21,10 +21,10 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v4
 
-      - name: Configurar Python ${{ matriz.python-version }}
+      - name: Configurar Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
-          python-version: ${{ matriz.python-version }}
+          python-version: ${{ matrix.python-version }}
           cache: 'pip'
 
       - name: Instalar dependências
